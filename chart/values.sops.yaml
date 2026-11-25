@@ -1,0 +1,30 @@
+secrets:
+    LIVEKIT_API_KEY: ""
+    LIVEKIT_API_SECRET: ""
+    SIP_OUTBOUND_PASSWORD: ""
+sops:
+    lastmodified: "2026-11-25T10:22:35Z"
+    mac: ENC[AES256_GCM,data:17UW9OoX2riQwzzS4B/TgRODjUp8n8hebHTEMZtji71aLcicnQ+IfT2pDzPL2tZyE203c2NTOXXYlL9q0WY4MEfLebFaQNLQX4/eREFmuuFnbrh/1xfdkwyJJb3rksjMB0zxaAqDStXwhMfDJfOs7tzeW6CB9EhF/2Xjkg2yoqc=,iv:9bGwAuaH3vo/+YVu8I4z87fXFI7n+7q6InOt3zDnut0=,tag:gFjB56pytj1UaBD0kfZkzg==,type:str]
+    pgp:
+        - created_at: "2026-11-25T10:22:35Z"
+          enc: |-
+            -----BEGIN PGP MESSAGE-----
+
+            hQIMAynDVBo+qSN4ARAAly8gwT9e8oiFtccoXmiOSCq1RJ1r0XjLkA8cxxAaMVzW
+            iEtQRGRZ/reeg6HuD0i2EsJfEcRfHdX7bCGZnutzKIc8Z2oWh1nSE5N0B8WVOWpJ
+            SsXV7/ZPyeXFVutz7A4KjZGS6fD4co+yn7LJNhNl6liW2GCoByoFIEgxZbYRxIv9
+            HrPUPV0lNTdKpTwmgvtnCbS9Akg9pxOzBov8NvRLIY9N3FPrKkwG2d6jqTix2tpG
+            5p2vRreDzr/40ydrBregeqqc6eapavxjq69zWU+m2zx6iYGgXKGgD3JUkE+lZRwW
+            Ypbq8xaEqG823uwc3LB3LYj/KFjtxM4YC2zjkff3u4JtEhj7qyi1Dzx/w3kGa9n+
+            ETE71LqC7AYntsYlXXIPlXeXbOs85tf69DAOMdXec2XFvA1+B7Tt8ZJKNiTvUKlz
+            RV/xuhhYBZ2sKh/WDZFSHwlwFLhilhiAT8vebWHnB8G1AqnWBYwtPogTY6vlpU8K
+            gOivjsMCybhhlDrogoOJdkHkHHGCMvtMLfCH5qBFlgIMwGlWr9uL2GnzaLMiIjS4
+            3QdeBUFcZ+WQVzkevCGXoKh6tHvIOTFcVweY0aWO2zTC4KK1wnWVo5c81yNU/ayc
+            T8LmVLR1AINorRTTrklqYs8Rz7O+5XTeCytxoc3BY/zRW5On+n2Jh3mWFPXF6JnS
+            XgFgDMXvYxOtdTUkQnUFJQJxqTAQDvS7WpR2nPHX/YzGmBT1mBbUV35FpUpXiz1C
+            m/s8Pb8sNf0IZuuQDgSJd4BQlOwvacIXEk2e8m+U/6pQXg6nUBGJ6PsCvbfYAq8=
+            =fCqh
+            -----END PGP MESSAGE-----
+          fp: 2A11039577F094006D59866E93258D71AA1811A4
+    unencrypted_suffix: _unencrypted
+    version: 3.13.3

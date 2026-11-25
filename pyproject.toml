@@ -1,0 +1,6 @@
+[project]
+name = "voicebot-test-setup"
+version = "0.1.0"
+description = "SIP echo bot that forwards the call on a key press"
+requires-python = ">=3.13"
+dependencies = ["livekit-agents>=1.8.2"]

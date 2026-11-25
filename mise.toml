@@ -1,0 +1,17 @@
+[tools]
+python = "3.13"
+uv = "latest"
+tilt = "latest"
+ctlptl = "latest"
+k3d = "latest"
+helm = "latest"
+kubectl = "latest"
+sops = "latest"
+
+[tasks.start]
+description = "Create the local k3d cluster and run the chart under Tilt"
+run = ["ctlptl apply -f cluster.yaml", "tilt up"]
+
+[tasks.stop]
+description = "Delete the local cluster"
+run = ["tilt down", "ctlptl delete -f cluster.yaml"]

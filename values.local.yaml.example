@@ -1,0 +1,15 @@
+# Copy to values.local.yaml (gitignored); Tilt layers it over chart/values.yaml.
+env:
+  LIVEKIT_URL: wss://livekit.example.com
+  # Your own name and number, or your local run takes a deployed bot's calls.
+  AGENT_NAME: voicebot-test-setup-dev-yourname
+  SIP_NUMBER: "+49xxxxxxxxxx"
+  SIP_OUTBOUND_ADDRESS: sip.example.com
+  SIP_OUTBOUND_USERNAME: username
+  TRANSFER_MODE: bridge  # or refer
+  TRANSFER_TO: "+49xxxxxxxxxx"
+# Only without access to values.sops.yaml:
+# secrets:
+#   LIVEKIT_API_KEY: ...
+#   LIVEKIT_API_SECRET: ...
+#   SIP_OUTBOUND_PASSWORD: ...

@@ -1,0 +1,19 @@
+apiVersion: ctlptl.dev/v1alpha1
+kind: Registry
+name: voicebot-test-setup-registry
+---
+apiVersion: ctlptl.dev/v1alpha1
+kind: Cluster
+product: k3d
+name: k3d-voicebot-test-setup
+registry: voicebot-test-setup-registry
+k3d:
+  v1alpha5Simple:
+    options:
+      k3s:
+        extraArgs:
+          # The default thresholds (10-15% free) evict every pod on a fuller dev disk.
+          - arg: --kubelet-arg=eviction-hard=imagefs.available<1%,nodefs.available<1%
+            nodeFilters: [server:*]
+          - arg: --kubelet-arg=eviction-minimum-reclaim=imagefs.available=1%,nodefs.available=1%
+            nodeFilters: [server:*]

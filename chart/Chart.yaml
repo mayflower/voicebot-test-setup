@@ -1,0 +1,4 @@
+apiVersion: v2
+name: voicebot-test-setup
+description: SIP echo bot that forwards the call on a key press
+version: 0.1.0

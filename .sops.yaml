@@ -1,0 +1,5 @@
+keys:
+  - &finn-melzer 2A11039577F094006D59866E93258D71AA1811A4
+creation_rules:
+  - path_regex: ^chart/values\.sops\.yaml$
+    pgp: *finn-melzer

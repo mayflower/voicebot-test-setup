@@ -1,0 +1,23 @@
+image:
+  repository: ghcr.io/mayflower/voicebot-test-setup
+  tag: latest
+  pullPolicy: Always
+# The ghcr package is private; the cluster needs a pull secret for it.
+imagePullSecrets:
+  - name: github-registry
+env:
+  LIVEKIT_URL: wss://livekit.example.com
+  # Names the agent and the trunks and dispatch rule it creates at startup.
+  AGENT_NAME: voicebot-test-setup
+  # The number calls arrive on, and the caller ID of forwarded calls, E.164.
+  SIP_NUMBER: "+49xxxxxxxxxx"
+  # SIP provider the forwarded call leaves through.
+  SIP_OUTBOUND_ADDRESS: sip.example.com
+  SIP_OUTBOUND_USERNAME: username
+  # How a key press forwards the call: "bridge" dials the target into the
+  # LiveKit room, "refer" hands the caller over with a SIP REFER (cold transfer).
+  TRANSFER_MODE: bridge
+  # Number a key press forwards the call to, E.164.
+  TRANSFER_TO: "+49xxxxxxxxxx"
+# LIVEKIT_API_KEY, LIVEKIT_API_SECRET and SIP_OUTBOUND_PASSWORD, from values.sops.yaml.
+secrets: {}
